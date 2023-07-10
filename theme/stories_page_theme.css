@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+.main-container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.content {
+    display: block;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    vertical-align: top;
+}
+
+video {
+    width: 100%;
+}
+audio {
+    width: 100%;
+}

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.header-container, 
+.footer-container {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #333333;
+}
+
+header, footer {
+    width: 960px;
+    overflow: hidden;
+    margin: 0 auto;
+    color: white;
+}
+
+.header-title {
+    width: 26%;
+    float: left;
+}
+
+header nav {
+    width: 74%;
+    float: right;
+}
+
+nav {
+    margin-top: 10px;
+    border-radius: 12px;
+    display: block;
+    background-color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 10px
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a[tabindex="4"] {
+    color: orange;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+nav ul li a[tabindex="4"]:disabled {
+    color: white;
+}
+
+nav ul li a[tabindex]:focus {
+    color: orange;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+}
+
+footer span {
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+
+footer span:last-child {
+    text-align: end;
+    margin: 0 auto;
+}
+
+.main-container {
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-container .content {
+    width: 45%;
+    float: left;
+}
+
+#sized-box {
+    width: 10%;
+}
+
+.main-container aside {
+    width: 45%;
+    float: right;
+}
+
+.main-container .content section {
+    color: #333;
+}
+
+aside .form-content {
+    clear: both;
+    color: #333;
+}
+
+.form-content div {
+    width: 100%;
+}
+
+.form-content legend {
+    font-size: 20px;
+}
+
+.form-content div input, 
+.form-content div textarea{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.form-content div input{
+    height: 40px;
+    border-color: #333;
+}
+
+.form-content div textarea{
+    resize: none;
+    padding-top: 10px;
+}
+
+.form-content div input[type=submit]{
+    width: 120px;
+    background-color: #333;
+    margin-bottom: 20px;
+    color: white;
+}

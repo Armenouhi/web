@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.header-container, 
+.footer-container {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #333333;
+}
+
+header, footer {
+    width: 960px;
+    overflow: hidden;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.header-title {
+    width: 26%;
+    float: left;
+}
+
+header nav {
+    width: 74%;
+    float: right;
+}
+
+nav {
+    margin-top: 10px;
+    border-radius: 12px;
+    background-color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 10px
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a[tabindex="1"] {
+    color: orange;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+nav ul li a[tabindex="1"]:disabled {
+    color: white;
+}
+
+nav ul li a[tabindex]:focus {
+    color: orange;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+}
+
+footer span {
+    width: 50%;
+    float: left;
+    margin: 0 auto;
+}
+
+footer span:last-child {
+    text-align: end;
+    margin: 0 auto;
+}
+
+.main-container {
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-container .box-container {
+    width: 70%;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-container .datas {
+    width: 30%;
+    float: right;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+.main-container .box-container .content {
+    padding-right: 50px;
+}
+
+.main-container .box-container .content .first-service-content {
+    width: 50%;
+    float: left;
+}
+
+.main-container .box-container .content .second-service-content {
+    width: 50%;
+    float: right;
+}
+
+.main-container .box-container .content .services span,
+.main-container .box-container .description span {
+    color: orange;
+    float: right;
+    margin-top: 15px;
+}
+
+.main-container .box-container .content .services span a,
+.main-container .box-container .description span a {
+    color: orange;
+    text-decoration: none;
+}
+
+.main-container .box-container .content .services img {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.categories-container ul li,
+.contacts-container ul li {
+    list-style: none;
+}
+
+.categories-container ul li {
+    border-bottom: 3px dashed #333;
+}
+
+.categories-container ul li span {
+    font-size: 25px;
+    color: orange;
+}
+
+.categories-container ul li a {
+    width: 100%;
+    font-size: 15px;
+    color: #333333;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+.contacts-container h3 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.contacts-container ul li span a,
+.contacts-container h3 a {
+    color: #333;
+}
+
+.contacts-container ul li span a {
+    text-decoration: none;
+}
+
+.contacts-container ul li span a span {
+    color: orange;
+}

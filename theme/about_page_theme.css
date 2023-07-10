@@ -1,0 +1,175 @@
+/* *{
+    box-sizing: border-box;
+}
+
+.container {
+    padding-top: 30px;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+.header-container, 
+.footer-container {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #333333;
+}
+
+header, footer {
+    width: 960px;
+    overflow: hidden;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.header-title {
+    width: 26%;
+    float: left;
+}
+
+header nav {
+    width: 74%;
+    float: right;
+}
+
+nav {
+    margin-top: 10px;
+    border-radius: 12px;
+    background-color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 10px
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a[tabindex="2"] {
+    color: orange;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+nav ul li a[tabindex="2"]:disabled {
+    color: white;
+}
+
+nav ul li a[tabindex]:focus {
+    color: orange;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+}
+
+.main-container {
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.main-container .left {
+    width: 60%;
+    float: left;
+}
+
+.main-container .right {
+    width: 40%;
+    float: right;
+}  
+
+.main-container .left .first-part img{
+    width: 548px;
+    height: 250px;
+    display: block;
+    margin: auto auto;  
+    border: 1px solid #e0dede;
+}
+
+.main-container .left .first-part{
+    border: 1px solid #333;  
+}
+
+.main-container .left .second-part{
+    padding-top: 10px; 
+}
+
+.third-part {
+    clear: both;
+    height: 285px;
+    margin-top: 20px;
+}
+
+.third-part .left {
+    width: 60%;
+    float: left;
+}
+
+.third-part .right {
+    width: 40%;
+    float: right;
+}
+
+.third-part .right li{
+   margin-top: 15px;
+   margin-left: 30px;
+}
+
+.third-part .right li a{
+    color: orange;
+    text-decoration: none;
+ }
+
+.user {
+    clear: both;
+}
+
+.user img {
+    width: 110px;
+    height: 110px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+.user .biography{
+    width: 260px;
+    color: #333;
+    float: right;
+}
+
+.biography h4 {
+    color: #333;
+}
+
+.biography span {
+    font-size: 10px;
+}
