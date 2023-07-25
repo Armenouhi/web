@@ -14,6 +14,7 @@
 .container {
     width: 960px;
     margin: 0 auto;
+    display: block;
 }
 
 header, main, footer {
@@ -40,10 +41,10 @@ header .navbar {
     width: 410px;
 }
 
-main .box-container {
+main .container .box-container {
     width: 430px;
-    margin-bottom: 70px;
-    display: block;
+    height: 400px;
+    display: inline-block;
 }
 
 .navbar,
@@ -114,6 +115,11 @@ main .box-container hr {
     margin-bottom: 25px;
 }
 
+main .box-container h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 main .box-container p {
     margin-top: 5px;
     margin-bottom: 15px;
@@ -162,7 +168,7 @@ main .box-container p {
     width: 100%;
     background-image: url(../assets/images/photo-1512428813834-c702c7702b78.jpg);
     overflow: hidden;
-    height: 200px;  
+    height: 250px;  
     background-size: cover;  
 }
 
@@ -183,11 +189,16 @@ main .box-container p {
 .gallery img {
     width: 100%;
     height: 100%;
+    opacity: 1;
 }
 
 #img-2  {
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.gallery img:hover {
+    opacity: 0.5;
 }
 
 #img-1:target,
@@ -200,6 +211,10 @@ main .box-container p {
     width: 157px;
     margin-right: 10px;
     display: inline;
+}
+
+#hr {
+    margin-top: 50px;
 }
 
 .fav-image {
