@@ -1,0 +1,277 @@
+/*
+*   display: flex; կգրենք էն էլեմենտներին, որոնց մեջ եղած էլեմենտները պետք է իրար կողք դասավորվին
+*/
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#title {
+    display: flex;    
+    justify-content: center;   /* justify-content-ը կաշխատի տրված div-ի մեջ եղած էլեմենտների հետ՝ հորիզոնական ուղղությամբ,,, 
+    էստեղ մեջտեղ կբերե էլեմենտը կամ էլեմենտները */
+    align-items: center;    /* align-items-ը կաշխատի տրված div-ի մեջ եղած էլեմենտների հետ՝ ուղղահայաց ուղղությամբ,,, 
+    էստեղ մեջտեղ կբերե էլեմենտը կամ էլեմենտները */
+}
+
+.logo {
+    width: 50px;
+    height: 30px;
+}
+
+#title svg {
+    width: 100%;
+    height: 100%;
+    rotate: 45deg;
+    fill: white;
+}
+
+.container {
+    width: 1080px;
+    text-align: center;   /* text-alig-ը կաշխատի տեքստի հետ․․․ Էս ուղղակի տեքստը մեջտեղ կբերե*/
+    margin: 0 auto;
+    background-color: rgb(55, 55, 55);
+    color: #fff;
+    padding: 0 40px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+.header h1{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+ .video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+ }
+
+video {
+    width: 100%;
+    object-fit: cover;  /* object-fit-ը կաշխատի տրված էլէմենտի parent(պապա)-ի հետ,,, 
+    cover-ը տրված է, որ վիդեոն առանց լոճվելու տեղավորվի իրա  parent div-ի մեջ՝ parent ամբողջ երկարությամբ ու լայնությամբ*/
+}
+
+.main-container {
+    padding: 0 50px;
+}
+
+
+.line {
+    margin: 30px auto;
+    width: 580px;
+}
+
+h2 {
+    margin: 20px 0;
+    text-align: start;
+}
+
+.content {
+    padding: 0 50px;
+}
+
+.carousel,
+.chess,
+.team,
+.tram {
+    display: flex;
+    justify-content: space-evenly;  /* space-evenly-ն կհեռեցնե էլեմենտները(ազատ տարածքներ ավելացնելով), 
+    բայց ազատ տարածքները կավելացնե առաջինի կողմից մենակ ձախից, վերջինի կողմից մենակ աջից, 
+    իսկ մյուսների համար համ ձախից, համ աջից */
+    align-items: center;
+}
+
+.img-container {
+    height: 110px;
+    border-radius: 50%;
+    flex-grow: 1; /* Էս գրված է, որ ազատ տարածությունից չափ կարողանա վերցնել, որպեսզի իրան երկարություն չտանք․․․
+    այսինքն էկրանի երկարությունից հանած մնացած բոլոր էլեմենտների երկարությունների գումարը,
+    տակն ինչքան տարածք կմնա՝ ինքը կվերցնե*/
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.description {
+    width: 450px;
+    border-radius: 20px;
+    flex-grow: 2;  /* Էստեղ 2 եմ գրել, որ էն առաջինից(նկարից), 
+    որին գրել էինք flex-grow: 1; ավելի մեծ տարածք կարողանա վերցնել*/
+    padding: 15px;
+    margin-right: 60px;
+}
+
+.description h4 {
+    text-align: start;
+}
+
+.description p {
+    text-align: start;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.description h5 {
+    text-align: end;
+    margin-top: 5px;
+}
+
+.carousel .description h4,
+.carousel .description h5 {
+    color: yellowgreen;
+}
+
+.chess .description h4,
+.chess .description h5 {
+    color: rgb(73, 247, 247);
+}
+
+.team .description h4,
+.team .description h5 {
+    color: rgb(249, 249, 74);
+}
+
+.tram .description h4,
+.tram .description h5 {
+    color: rgb(253, 185, 59);
+}
+
+.carousel:has(div[class="description"]) div[class="description"],
+.team:has(div[class="description"]) div[class="description"] {
+    background-color: #21272b
+}
+
+.chess:has(div[class="description"]) div[class="description"],
+.tram:has(div[class="description"]) div[class="description"] {
+    background-color: rgb(132, 130, 130);
+}
+
+ /*  .description:nth-child(odd) {  /* Էս գրել եմ, որ description div-երի 1-ինին ու 3-րդ-ին(կենտերը) 21272b գույն տամ*/
+  /*  background-color: #21272b;
+} 
+
+.description:nth-child(even) { /* Էս գրել եմ, որ description div-երի 2-ինին ու 4-րդ-ին(զույգերը) rgb(132, 130, 130) գույն տամ*/
+   /* background-color: rgb(132, 130, 130);   /* Էս հլը չի աշխատի․․․*/
+ /* } */
+
+.line-x {  
+    /* կրնաս էս 1-երը փոխես, տեսնիս՝ ի՞նչ կեղնի */
+    width: 1px;  
+    height: 1px;
+    flex-grow: 1;
+}
+
+.hr-content {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-y {
+    width: 35px;
+    height: 1px;
+    transform: rotate(90deg);  /* Քանի որ hr-ը հորիզոնական գիծ է, էս գրել եմ, որ իրան 90 աստիճանով թեքե, դառնա ուղղահայաց*/
+    margin-right: 170px;
+}
+
+.footer {
+    padding-bottom: 30px;
+}
+
+.partner-organization {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.partner-organization div {
+    width: 250px;
+    text-align: start;
+}
+
+.partner-organization p {
+    margin-top: 8px;
+}
+
+.location {
+    display: flex;
+    justify-content: space-around; /**Էս բոլոր էլեմենտներին բոլոր կողմերից  ազատ տարածություն կավելացնե*/
+}
+
+.location .map {
+    width: 400px;
+    height: 200px;
+    padding-left: 15px;
+}
+
+.location .map img{
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    object-fit: cover;
+}
+
+.form form {
+    padding: 10px;
+}
+
+.form, 
+.location .map {
+    text-align: start;
+}
+
+.form h4 {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.form form textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+input[type='submit'] {  /* էս էլ գրել եմ, որ մենակ submit տիպ ունեցող input-ը վերցնե, 
+    որն իրանից կներկայացնե՝ տվյալներն ուղարկող կոճակ*/
+    padding: 10px 20px;
+    color: #fff;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='submit'],
+textarea { 
+    border: 2px solid white;
+    background-color: rgb(55, 55, 55);
+}
+
+input[type='email'] {
+    margin-left: 22px;
+}
+
+input[type='submit'] {
+    width: 150px;
+    margin-top: 5px;
+}
+
+.form form input, 
+.form form textarea {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.footer span {
+    vertical-align: middle;
+}

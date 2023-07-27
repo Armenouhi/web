@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeless</title>
+    <link rel="stylesheet" href="theme/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+       <div id="title">  <!-- Էս առանձին div եմ գրել, որ իրա մեջ եղած էլեմենտները կարողանամ իրար կողք դասավորեմ -->
+            <div class="logo">
+                <svg xmlns="assets/images/square.svg" class="bi bi-square" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                </svg>
+            </div>
+            <h1>Timeless</h1>
+       </div>
+        <div class="video">
+            <video autoplay muted loop>  <!-- muted-ը գրված է, որ տեսանյութի ձայնը ավտոմատ անջատած էղնի, քանի որ ինքը ավտոմատ մաիցած է -->
+                <source src="assets/videos/video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>      
+    </div>
+    <div class="main-container">
+        <h2>Welcome to Timeless</h2>
+        <div class="content">
+            <div class="carousel">
+                <div class="img-container" >
+                    <img src="assets/images/img-01.jpg" alt="Image not found">
+                </div>
+                <hr class="line-x">
+                <div class="description">
+                    <h4>What is Lorem Ipsum?</h4>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <h5>What is Lorem Ipsum?</h5>
+                </div>
+            </div>
+            <div class="hr-content">
+                <hr class="line-y">
+            </div>
+            <div class="chess">
+                <div class="img-container">
+                    <img src="assets/images/img-02.jpg" alt="Image not found"></div>
+                    <!-- Նկարի ու description div-ի մեջ եղած հորիզոնական գիծն է․․․ -->
+                <hr class="line-x"> 
+                <div class="description">
+                    <h4>What is Lorem Ipsum?</h4>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <h5>What is Lorem Ipsum?</h5>
+                </div>
+            </div>
+            <div class="hr-content">  <!-- Էս գրել եմ, որ կարողանամ ուղղահայաց գիծը մեջտեղ տեղափոխեմ,
+            քանի որ առանց div գրելու իրան ուղղակի տեղափոխել չենք կրնա․․․ 
+        առավելագույնն, որ կրնանք ենենք margin-left տալը կեղնի-->
+                <!-- Նկարի ու description div-ի parent div-երի մեջ եղած ուղղահայաց գիծն է գիծն է․․․ -->
+                <hr class="line-y">
+            </div>
+            <div class="team">
+                <div class="img-container">
+                    <img src="assets/images/img-03.jpg" alt="Image not found">
+                </div>
+                <hr class="line-x">
+                <div class="description">
+                    <h4>What is Lorem Ipsum?</h4>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <h5>What is Lorem Ipsum?</h5>
+                </div>
+            </div>
+            <div class="hr-content">
+                <hr class="line-y">
+            </div>
+            <div class="tram">
+                <div class="img-container">
+                    <img src="assets/images/img-04.jpg" alt="Image not found">
+                </div>
+                <hr class="line-x">
+                <div class="description">
+                    <h4>What is Lorem Ipsum?</h4>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                    <h5>What is Lorem Ipsum?</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="line">
+    <div class="footer">
+        <div class="partner-organization">
+            <div>
+                <h4>Lorem Ipsum</h4>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+            </div>
+            <div>
+                <h4>Lorem Ipsum</h4>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+            </div>
+            <div>
+                <h4>Lorem Ipsum</h4>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+            </div>
+        </div>
+        <hr class="line">
+        <div class="location">
+            <div class="map">
+                <h4>Our Location</h4>
+                <img src="assets/images/Screenshot.png" alt="Image not found">
+            </div>
+            <div class="form">
+                <h4>Contact Us</h4>
+                <form action="#" method="get">
+                     <input type="text" name="name" placeholder="Name...">
+                     <input type="email" name="email" placeholder="Email...">
+                     <div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
+                     </div>
+                     <input type="submit" value="Submit It">
+                </form>
+            </div>
+        </div>
+        <hr class="line">
+        <span>Copyright @ 2023 Your Company Name | Designed Name Surname</span>
+    </div>
+  </div>  
+</body>
+</html>
