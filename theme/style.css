@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../assets/images/tm-astro-bg.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    padding: 40px;
+}
+
+header {
+    display: flex;
+}
+
+.title {
+    width: 50%;
+    height: 70px;
+}
+
+.navbar {
+    width: 50%;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    border-bottom: 2px solid;
+    padding: 0 50px;
+    padding-bottom: 15px;
+}
+
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.circle-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    bottom: 8px;
+    z-index: 1;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.circle-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+}
+
+.box-container .circle-container:first-of-type {
+    top: 36px;
+}
+
+.box-container .circle-container:last-of-type {
+    bottom: 20px;
+}
+
+.box-container {
+    width: 50%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.content {
+    width: 100%;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    column-gap: 35px;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 25px;
+}
+
+.description,
+.images {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.description {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.images img {
+    width: auto;
+    height: 120px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+
+footer {
+    width: 95%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+}
