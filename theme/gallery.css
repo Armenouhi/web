@@ -28,6 +28,7 @@ main>div {
 .content {
     column-gap: 15px;
     border-bottom: none;
+    display: none;
 }
 
 .content>div img{
@@ -41,9 +42,23 @@ main>div {
     column-gap: 15px;
 }
 
-.after-before>div {
+.after-before>a {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #fff;
+}
+
+.after-before>a:first-of-type {
+    background-color: cyan;
+}
+
+#first-item:target,
+#second-item:target,
+#third-item:target {
+    display: flex;
+}
+
+.after-before>a:target .active{
+    background-color: cyan;
 }
