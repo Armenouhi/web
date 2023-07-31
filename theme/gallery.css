@@ -1,0 +1,49 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main>div {
+    justify-content: center;
+}
+
+.box-container {
+    width: 1080px;
+    row-gap: 10px;
+}
+
+.box-container .circle-container:first-of-type {
+    left: 0%;
+    top: 35px;
+}
+
+.circle-container {
+    width: 1090px;
+    left: 0%;
+    z-index: 3;
+    top: 0px;
+    margin-bottom: 10px;
+}
+
+.content {
+    column-gap: 15px;
+    border-bottom: none;
+}
+
+.content>div img{
+    width: auto;
+    height: 250px;
+}
+
+.after-before {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.after-before>div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
