@@ -74,7 +74,15 @@ main {
     color: yellowgreen;
 }
 
-.navbar ul li a:active {
+.circle-content.active {
+    color: yellowgreen;
+}
+
+.circle.active {
+    background-color: yellowgreen;
+}
+
+.navbar ul li a.active {
     color: yellowgreen;
 }
 
